@@ -1,0 +1,234 @@
+body {
+    background-color: #202024;
+    margin: 0;
+    padding: 0;
+}
+
+a,
+a:visited,
+a:link,
+a:active,
+a:hover {
+    text-decoration: none;
+    color: #5d737e;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+html {
+    padding: 0;
+    margin: 0;
+}
+
+.home-button {
+    margin: 0;
+}
+
+.home-button a:hover {
+    background-color: rgba(0, 0, 0);
+    opacity: .75;
+    transition: opacity .5s ease-out;
+    -moz-transition: opacity .5s ease-out;
+    -webkit-transition: opacity .5s ease-out;
+    -o-transition: opacity .5s ease-out;
+}
+
+.home-button a {
+    border: white;
+    border-style: solid;
+    border-width: thin;
+    color: white;
+    padding: 10px 30px;
+}
+
+.home-button a:hover {
+    color: antiquewhite;
+}
+
+* {
+    color: #5d737e;
+    font-family: 'Lato', sans-serif;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.about {
+    padding: 0 25px 25px 0;
+}
+
+footer {
+    background-color: #1b1b1f;
+    padding: 25px;
+    text-align: center;
+}
+
+footer a,
+footer a:visited,
+footer a:link,
+footer a:active {
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    color: #3b3b3b;
+    font-size: 16px;
+}
+
+footer a:hover {
+    opacity: 0.75;
+}
+
+footer i {
+    padding: 0 10px;
+    color: #3b3b3b;
+}
+
+footer i:hover {
+    opacity: .5;
+    transition: opacity .5s ease-out;
+    -moz-transition: opacity .5s ease-out;
+    -webkit-transition: opacity .5s ease-out;
+    -o-transition: opacity .5s ease-out;
+}
+
+.splash-page {
+    background: url(../img/photo-black-2.jpg);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.splash-page div {
+    width: 100%;
+    text-align: center;
+}
+
+.splash-page div h1:first-child {
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+    color: white;
+    margin-bottom: 0;
+    font-size: 50px;
+}
+
+.splash-page div h1 {
+    letter-spacing: 2px;
+    text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+    color: white;
+    margin-bottom: 0;
+    font-size: 25px;
+}
+
+.splash-page div h2 {
+    color: white;
+    letter-spacing: 1px;
+    text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+    font-weight: 300;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.work-page {
+    padding-top: 10px;
+}
+
+#gallery img {
+    border-radius: 10px;
+    margin: 0 1px 0;
+}
+
+#gallery img:hover {
+    opacity: .75;
+    transition: opacity .5s ease-in-out;
+    -moz-transition: opacity .5s ease-in-out;
+    -webkit-transition: opacity .5s ease-in-out;
+    -o-transition: opacity .5s ease-in-out;
+}
+
+
+/*POPTROX*/
+
+.poptrox-popup {
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    -ms-box-sizing: content-box;
+    box-sizing: content-box;
+    background: #000;
+    box-shadow: 0 0.5em 3em 0 rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    padding: 2em;
+    overflow: hidden;
+}
+
+.poptrox-popup .closer {
+    -moz-transition: opacity 0.2s ease-in-out;
+    -webkit-transition: opacity 0.2s ease-in-out;
+    -ms-transition: opacity 0.2s ease-in-out;
+    transition: opacity 0.2s ease-in-out;
+    text-decoration: none;
+    position: absolute;
+    top: .5em;
+    right: .5em;
+    z-index: 11000;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    white-space: nowrap;
+    text-indent: 2em;
+    overflow: hidden;
+    width: 2em;
+    height: 2em;
+    display: block;
+}
+
+.poptrox-popup .closer:before {
+    content: "\f00d";
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-transform: none !important;
+    display: block;
+    position: relative;
+    text-indent: 0;
+    border-radius: 100%;
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.25);
+    color: #ffffff !important;
+    width: 2em;
+    height: 2em;
+    line-height: 2em;
+}
+
+.poptrox-popup:hover .closer {
+    opacity: 0.5;
+}
+
+.poptrox-popup:hover .closer:hover {
+    opacity: 1.0;
+}
+
+@media screen and (max-width: 736px) {
+    .poptrox-popup {
+        padding: 0;
+    }
+    .poptrox-popup .closer {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .text-right {
+        text-align: center;
+    }
+    .splash-page div h1:first-child {
+        font-size: 30px;
+    }
+}
